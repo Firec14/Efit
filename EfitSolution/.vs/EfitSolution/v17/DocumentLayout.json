@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\efitweb1\\views\\home\\forgot_password.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|solutionrelative:efitweb1\\views\\home\\forgot_password.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\efitweb1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|solutionrelative:efitweb1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\efitweb1\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|solutionrelative:efitweb1\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\efitweb1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|solutionrelative:efitweb1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\efitweb1\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|solutionrelative:efitweb1\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\efitweb1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|solutionrelative:efitweb1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\efitweb1\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|solutionrelative:efitweb1\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +38,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "EfitWeb1\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "EfitWeb1\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T16:08:47.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EfitWeb1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EfitWeb1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T16:07:47.227Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Forgot_Password.cshtml",
+              "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Home\\Forgot_Password.cshtml",
+              "RelativeDocumentMoniker": "EfitWeb1\\Views\\Home\\Forgot_Password.cshtml",
+              "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Home\\Forgot_Password.cshtml",
+              "RelativeToolTip": "EfitWeb1\\Views\\Home\\Forgot_Password.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T15:55:07.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Home\\Register.cshtml",
+              "RelativeDocumentMoniker": "EfitWeb1\\Views\\Home\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Home\\Register.cshtml",
+              "RelativeToolTip": "EfitWeb1\\Views\\Home\\Register.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAwwDgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T15:55:06.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "EfitWeb1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "EfitWeb1\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T15:30:03.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "EfitWeb1\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "EfitWeb1\\Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACMAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T15:25:36.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "EfitWeb1\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "EfitWeb1\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAARAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAwwBoAAAByAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-07T13:37:01.803Z",
               "EditorCaption": ""
