@@ -1,2 +1,0 @@
-C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl\eUseControl.Web\obj\Debug\eUseControl.Web.csproj.AssemblyReference.cache
-C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl\eUseControl.Web\obj\Debug\eUseControl.Web.csproj.CoreCompileInputs.cache

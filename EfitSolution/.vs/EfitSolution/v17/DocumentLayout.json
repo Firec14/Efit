@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\efitweb1\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|solutionrelative:efitweb1\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\efitweb1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|solutionrelative:efitweb1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\efitweb1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}|EfitWeb1\\EfitWeb1.csproj|solutionrelative:efitweb1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{76506347-F24C-4FF0-B6F6-05EC02C4EA69}|eUseControl.BusinessLogic\\eUseControl.BusinessLogic.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\eusecontrol.businesslogic\\bussineslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76506347-F24C-4FF0-B6F6-05EC02C4EA69}|eUseControl.BusinessLogic\\eUseControl.BusinessLogic.csproj|solutionrelative:eusecontrol.businesslogic\\bussineslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76506347-F24C-4FF0-B6F6-05EC02C4EA69}|eUseControl.BusinessLogic\\eUseControl.BusinessLogic.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\eusecontrol.businesslogic\\interfaces\\isession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76506347-F24C-4FF0-B6F6-05EC02C4EA69}|eUseControl.BusinessLogic\\eUseControl.BusinessLogic.csproj|solutionrelative:eusecontrol.businesslogic\\interfaces\\isession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76506347-F24C-4FF0-B6F6-05EC02C4EA69}|eUseControl.BusinessLogic\\eUseControl.BusinessLogic.csproj|c:\\users\\serghei\\desktop\\a\\efit\\efitsolution\\eusecontrol.businesslogic\\core\\userapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76506347-F24C-4FF0-B6F6-05EC02C4EA69}|eUseControl.BusinessLogic\\eUseControl.BusinessLogic.csproj|solutionrelative:eusecontrol.businesslogic\\core\\userapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,27 +59,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Home\\Login.cshtml",
-              "RelativeDocumentMoniker": "EfitWeb1\\Views\\Home\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Home\\Login.cshtml",
-              "RelativeToolTip": "EfitWeb1\\Views\\Home\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-09T10:49:51.451Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "EfitWeb1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "EfitWeb1\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T15:09:20.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ISession.cs",
+              "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\eUseControl.BusinessLogic\\Interfaces\\ISession.cs",
+              "RelativeDocumentMoniker": "eUseControl.BusinessLogic\\Interfaces\\ISession.cs",
+              "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\eUseControl.BusinessLogic\\Interfaces\\ISession.cs",
+              "RelativeToolTip": "eUseControl.BusinessLogic\\Interfaces\\ISession.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T15:05:47.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserApi.cs",
+              "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\eUseControl.BusinessLogic\\Core\\UserApi.cs",
+              "RelativeDocumentMoniker": "eUseControl.BusinessLogic\\Core\\UserApi.cs",
+              "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\eUseControl.BusinessLogic\\Core\\UserApi.cs",
+              "RelativeToolTip": "eUseControl.BusinessLogic\\Core\\UserApi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T15:05:35.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "EfitWeb1\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\EfitWeb1\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "EfitWeb1\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-08T16:49:24.77Z",
+              "Title": "BussinesLogic.cs",
+              "DocumentMoniker": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\eUseControl.BusinessLogic\\BussinesLogic.cs",
+              "RelativeDocumentMoniker": "eUseControl.BusinessLogic\\BussinesLogic.cs",
+              "ToolTip": "C:\\Users\\Serghei\\Desktop\\a\\Efit\\EfitSolution\\eUseControl.BusinessLogic\\BussinesLogic.cs",
+              "RelativeToolTip": "eUseControl.BusinessLogic\\BussinesLogic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T15:02:57.1Z",
               "EditorCaption": ""
             }
           ]

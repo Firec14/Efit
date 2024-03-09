@@ -1,2 +1,0 @@
-C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl\eUseControl.BusinessLogic\obj\Debug\eUseControl.BusinessLogic.csproj.AssemblyReference.cache
-C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl\eUseControl.BusinessLogic\obj\Debug\eUseControl.BusinessLogic.csproj.CoreCompileInputs.cache
