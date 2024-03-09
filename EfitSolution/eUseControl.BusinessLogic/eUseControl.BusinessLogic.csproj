@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{76506347-F24C-4FF0-B6F6-05EC02C4EA69}</ProjectGuid>
+    <ProjectGuid>{B159F1B9-9555-4204-B716-59A3B312412C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>eUseControl.BusinessLogic</RootNamespace>
@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BussinesLogic.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Core\AdminApi.cs" />
     <Compile Include="Core\UserApi.cs" />
     <Compile Include="Interfaces\ISession.cs" />
@@ -51,11 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\eUseControl.Domain\eUseControl.Domain.csproj">
-      <Project>{bf18df63-fa18-4b79-9e18-f5b83d8308c2}</Project>
+      <Project>{737ca869-f2f1-4365-b117-ae6c90261ec7}</Project>
       <Name>eUseControl.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\eUseControl.Helpers\eUseControl.Helpers.csproj">
-      <Project>{63254a7c-4121-4fd7-9949-55e11998edc7}</Project>
+      <Project>{d300fdaa-d35d-4080-b5a4-ca1b386c5b28}</Project>
       <Name>eUseControl.Helpers</Name>
     </ProjectReference>
   </ItemGroup>

@@ -5,11 +5,11 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfitWeb1", "EfitWeb1\EfitWeb1.csproj", "{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eUseControl.BusinessLogic", "eUseControl.BusinessLogic\eUseControl.BusinessLogic.csproj", "{76506347-F24C-4FF0-B6F6-05EC02C4EA69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eUseControl.BusinessLogic", "eUseControl.BusinessLogic\eUseControl.BusinessLogic.csproj", "{B159F1B9-9555-4204-B716-59A3B312412C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eUseControl.Domain", "eUseControl.Domain\eUseControl.Domain.csproj", "{BF18DF63-FA18-4B79-9E18-F5B83D8308C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eUseControl.Domain", "eUseControl.Domain\eUseControl.Domain.csproj", "{737CA869-F2F1-4365-B117-AE6C90261EC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eUseControl.Helpers", "eUseControl.Helpers\eUseControl.Helpers.csproj", "{63254A7C-4121-4FD7-9949-55E11998EDC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eUseControl.Helpers", "eUseControl.Helpers\eUseControl.Helpers.csproj", "{D300FDAA-D35D-4080-B5A4-CA1B386C5B28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +21,18 @@ Global
 		{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D7954DC-2C9A-4839-BF05-6F84B597E7C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76506347-F24C-4FF0-B6F6-05EC02C4EA69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76506347-F24C-4FF0-B6F6-05EC02C4EA69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76506347-F24C-4FF0-B6F6-05EC02C4EA69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76506347-F24C-4FF0-B6F6-05EC02C4EA69}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF18DF63-FA18-4B79-9E18-F5B83D8308C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF18DF63-FA18-4B79-9E18-F5B83D8308C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF18DF63-FA18-4B79-9E18-F5B83D8308C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF18DF63-FA18-4B79-9E18-F5B83D8308C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{63254A7C-4121-4FD7-9949-55E11998EDC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63254A7C-4121-4FD7-9949-55E11998EDC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63254A7C-4121-4FD7-9949-55E11998EDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63254A7C-4121-4FD7-9949-55E11998EDC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B159F1B9-9555-4204-B716-59A3B312412C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B159F1B9-9555-4204-B716-59A3B312412C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B159F1B9-9555-4204-B716-59A3B312412C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B159F1B9-9555-4204-B716-59A3B312412C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{737CA869-F2F1-4365-B117-AE6C90261EC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737CA869-F2F1-4365-B117-AE6C90261EC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737CA869-F2F1-4365-B117-AE6C90261EC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737CA869-F2F1-4365-B117-AE6C90261EC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D300FDAA-D35D-4080-B5A4-CA1B386C5B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D300FDAA-D35D-4080-B5A4-CA1B386C5B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D300FDAA-D35D-4080-B5A4-CA1B386C5B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D300FDAA-D35D-4080-B5A4-CA1B386C5B28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

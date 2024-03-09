@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>63254a7c-4121-4fd7-9949-55e11998edc7</ProjectGuid>
+    <ProjectGuid>d300fdaa-d35d-4080-b5a4-ca1b386c5b28</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>eUseControl.Helpers</RootNamespace>
