@@ -7,3 +7,12 @@ C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\eUseControl.Domain\obj\Debug\eUse
 C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\eUseControl.Domain\obj\Debug\eUseControl.Domain.csproj.CopyComplete
 C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\eUseControl.Domain\obj\Debug\eUseControl.Domain.dll
 C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\eUseControl.Domain\obj\Debug\eUseControl.Domain.pdb
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Domain\bin\Debug\eUseControl.Domain.dll
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Domain\bin\Debug\eUseControl.Domain.pdb
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Domain\bin\Debug\eUseControl.Helpers.dll
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Domain\bin\Debug\eUseControl.Helpers.pdb
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Domain\obj\Debug\eUseControl.Domain.csproj.AssemblyReference.cache
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Domain\obj\Debug\eUseControl.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Domain\obj\Debug\eUseCont.610CB305.Up2Date
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Domain\obj\Debug\eUseControl.Domain.dll
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Domain\obj\Debug\eUseControl.Domain.pdb

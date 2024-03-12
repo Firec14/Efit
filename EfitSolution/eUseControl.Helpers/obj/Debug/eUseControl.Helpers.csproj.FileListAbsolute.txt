@@ -4,3 +4,9 @@ C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\eUseControl.Helpers\obj\Debug\eUs
 C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.dll
 C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.pdb
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Helpers\bin\Debug\eUseControl.Helpers.dll
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Helpers\bin\Debug\eUseControl.Helpers.pdb
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.csproj.AssemblyReference.cache
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.dll
+C:\Users\Serghei\Desktop\a\Efit\EfitSolution\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.pdb
