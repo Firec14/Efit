@@ -1,4 +1,5 @@
-﻿using eUseControl.BusinessLogic.Interfaces;
+﻿using eUseControl.BusinessLogic.Core;
+using eUseControl.BusinessLogic.Interfaces;
 using eUseControl.Domain.Entities.User;
 using System;
 using System.Collections.Generic;
@@ -8,12 +9,16 @@ using System.Threading.Tasks;
 
 namespace eUseControl.BusinessLogic
 {
-     public class SessionBL : ISession
+     public class SessionBL : UserApi, ISession
      {
-          public UserLogin Userlogin(ULoginData data)
+          public ULoginResp UserLogin(ULoginData data)
           {
-               UserLogin userLogin = new UserLogin();
-               return userLogin;
+               return UserLoginLogic(data);
+          }
+
+          public URegisterResp UserRegistration(URegisterData data)
+          {
+               return UserRegistrationLogic(data);
           }
      }
 }

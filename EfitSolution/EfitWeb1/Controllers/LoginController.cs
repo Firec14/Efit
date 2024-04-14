@@ -1,4 +1,5 @@
-﻿using eUseControl.BusinessLogic;
+﻿using EfitWeb1.Models;
+using eUseControl.BusinessLogic;
 using eUseControl.BusinessLogic.Interfaces;
 using eUseControl.Domain.Entities.User;
 using System;
@@ -30,11 +31,9 @@ namespace EfitWeb1.Controllers
                     {
                          Credential = login.Credential,
                          Password = login.Password,
-                         LoginIp = Request.UserHostAddress,
-                         LoginDataTime = DateTime.Now
                     };
 
-                    var userLogin = _session.Userlogin(data);
+                    var userLogin = _session.UserLogin(data);
                     if (userLogin.Status)
                     {
                          //ADD COOKIE
