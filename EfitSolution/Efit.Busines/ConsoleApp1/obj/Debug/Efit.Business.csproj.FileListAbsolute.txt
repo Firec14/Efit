@@ -1,0 +1,2 @@
+C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\ConsoleApp1\obj\Debug\Efit.Business.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\ConsoleApp1\obj\Debug\Efit.Business.csproj.CoreCompileInputs.cache
