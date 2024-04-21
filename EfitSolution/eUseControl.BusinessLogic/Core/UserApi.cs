@@ -14,7 +14,7 @@ namespace eUseControl.BusinessLogic.Core
           {
                using (var context = new EfitContext())
                {
-                    var result = context.User.FirstOrDefault(u => u.Name == data.Credential && u.Password == data.Password);
+                    var result = context.User.FirstOrDefault(u => u.Email == data.Email && u.Password == data.Password);
                     if (result == null)
                     {
                          return new ULoginResp { Status = false, StatusMsg = "Wrong email or password" };
