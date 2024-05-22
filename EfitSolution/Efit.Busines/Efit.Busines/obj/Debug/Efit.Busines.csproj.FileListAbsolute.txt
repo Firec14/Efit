@@ -1,0 +1,6 @@
+C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\Efit.Busines\bin\Debug\Efit.Busines.dll
+C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\Efit.Busines\bin\Debug\Efit.Busines.pdb
+C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\Efit.Busines\obj\Debug\Efit.Busines.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\Efit.Busines\obj\Debug\Efit.Busines.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\Efit.Busines\obj\Debug\Efit.Busines.dll
+C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\Efit.Busines\obj\Debug\Efit.Busines.pdb

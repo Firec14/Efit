@@ -74,7 +74,6 @@ C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\EfitWeb1\bin\Antlr3.Runtime.pdb
 C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\EfitWeb1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\EfitWeb1\obj\Debug\EfitWeb1.csproj.AssemblyReference.cache
 C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\EfitWeb1\obj\Debug\EfitWeb1.csproj.CoreCompileInputs.cache
-C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\EfitWeb1\obj\Debug\EfitWeb1.csproj.CopyComplete
 C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\EfitWeb1\obj\Debug\EfitWeb1.dll
 C:\Users\PC\Desktop\MRSUTWeb\EFit\EfitSolution\EfitWeb1\obj\Debug\EfitWeb1.pdb
 C:\Users\Serghei\Desktop\a\Efit\EfitSolution\EfitWeb1\bin\EfitWeb1.dll.config
@@ -170,3 +169,12 @@ C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\eUseControl.Business
 C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\eUseControl.Domain.dll.config
 C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\EntityFramework.xml
 C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\EntityFramework.SqlServer.xml
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\AutoMapper.dll
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\eUseControl.Helpers.dll
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\System.ValueTuple.dll
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\AutoMapper.pdb
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\AutoMapper.xml
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\eUseControl.Helpers.pdb
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\eUseControl.Helpers.dll.config
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\System.ValueTuple.xml
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\obj\Debug\EfitWeb1.csproj.Up2Date
