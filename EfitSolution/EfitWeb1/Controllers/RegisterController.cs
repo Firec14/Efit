@@ -16,6 +16,7 @@ namespace EfitWeb1.Controllers
           public RegisterController()
           {
                var bl = new BussinessLogic();
+               var bl = new eUseControl.BusinessLogic.BusinessLogic();
                _session = bl.GetSessionBL();
           }
           // GET: Register
@@ -23,7 +24,7 @@ namespace EfitWeb1.Controllers
           {
                return View();
           }
-
+          //POSt
           [HttpPost]
           public ActionResult Index(UserRegister register)
           {
@@ -36,9 +37,18 @@ namespace EfitWeb1.Controllers
                          Email = register.Email
                     };
                     var userRegister = _session.UserRegistration(data);
-                    return View();
+                    if (userRegister.Status)
+                    {
+                         return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                         ViewBag.ErrorMessage = "Registraion failed. Please try again";
+                         return View(register);
+                    }
                }
                return View();
+               return View(register);
           }
      }
 }

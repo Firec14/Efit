@@ -16,3 +16,9 @@ C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.Helpers\bin\Debug\Ent
 C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.Helpers\bin\Debug\EntityFramework.xml
 C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.Helpers\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.Helpers\obj\Debug\eUseCont.031189D9.Up2Date
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.Helpers\bin\Debug\eUseControl.Helpers.dll.config
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.Helpers\bin\Debug\EntityFramework.dll
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.Helpers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.Helpers\bin\Debug\EntityFramework.xml
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.Helpers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.csproj.CopyComplete

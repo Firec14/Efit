@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace eUseControl.BusinessLogic
 {
-     public class BussinessLogic
+     public class BusinessLogic
      {
           public ISession GetSessionBL()
           {
