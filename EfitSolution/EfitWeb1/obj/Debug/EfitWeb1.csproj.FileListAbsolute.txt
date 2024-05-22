@@ -164,3 +164,9 @@ C:\Users\Serghei\Desktop\a\Efit\EfitSolution\EfitWeb1\bin\eUseControl.BusinessLo
 C:\Users\Serghei\Desktop\a\Efit\EfitSolution\EfitWeb1\bin\eUseControl.Domain.dll
 C:\Users\Serghei\Desktop\a\Efit\EfitSolution\EfitWeb1\bin\eUseControl.BusinessLogic.pdb
 C:\Users\Serghei\Desktop\a\Efit\EfitSolution\EfitWeb1\bin\eUseControl.Domain.pdb
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\EntityFramework.dll
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\EntityFramework.SqlServer.dll
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\eUseControl.BusinessLogic.dll.config
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\eUseControl.Domain.dll.config
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\EntityFramework.xml
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\EfitWeb1\bin\EntityFramework.SqlServer.xml

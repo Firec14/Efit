@@ -16,7 +16,7 @@ namespace EfitWeb1.Controllers
 
         public LoginController()
           {
-               var bl = new BussinesLogic();
+               var bl = new BussinessLogic();
                _session = bl.GetSessionBL();
           }
 
