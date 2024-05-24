@@ -10,22 +10,22 @@ using System.Web.Mvc;
 
 namespace EfitWeb1.Controllers
 {
-    public class LoginController : Controller
-    {
-        private readonly ISession _session;
+     public class LoginController : Controller
+     {
+          private readonly ISession _session;
 
-        public LoginController()
+          public LoginController()
           {
-               var bl = new BussinessLogic();
+               var bl = new BusinessLogic();
                _session = bl.GetSessionBL();
           }
 
           // GET: Login
           [HttpPost]
           [ValidateAntiForgeryToken]
-        public ActionResult Index(UserLogin login)
-        {
-               if(ModelState.IsValid)
+          public ActionResult Index(UserLogin login)
+          {
+               if (ModelState.IsValid)
                {
                     ULoginData data = new ULoginData
                     {
@@ -45,7 +45,7 @@ namespace EfitWeb1.Controllers
                          return View();
                     }
                }
-            return View();
-        }
-    }
+               return View();
+          }
+     }
 }

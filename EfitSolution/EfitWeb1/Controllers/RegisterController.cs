@@ -15,7 +15,6 @@ namespace EfitWeb1.Controllers
           private readonly ISession _session;
           public RegisterController()
           {
-               var bl = new BussinessLogic();
                var bl = new eUseControl.BusinessLogic.BusinessLogic();
                _session = bl.GetSessionBL();
           }
@@ -47,7 +46,6 @@ namespace EfitWeb1.Controllers
                          return View(register);
                     }
                }
-               return View();
                return View(register);
           }
      }
