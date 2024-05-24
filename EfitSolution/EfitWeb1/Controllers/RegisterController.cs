@@ -36,7 +36,7 @@ namespace EfitWeb1.Controllers
                          Password = register.Password,
                          Email = register.Email
                     };
-                    var userRegister = _session.UserRegistration(data);
+                    var userRegister = _session.UserRegister(data);
                     if (userRegister.Status)
                     {
                          return RedirectToAction("Index", "Home");

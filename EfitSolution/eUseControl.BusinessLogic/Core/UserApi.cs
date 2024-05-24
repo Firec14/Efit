@@ -6,10 +6,10 @@ using eUseControl.BusinessLogic.DB;
 using eUseControl.Domain.Entities.User;
 using EntityState = System.Data.Entity.EntityState;
 using Helpers;
-using eUseControl.Domain.Enums;
 using System.ComponentModel.DataAnnotations;
 using Domain.Entities.User;
 using AutoMapper;
+using eUseControl.Domain.Enums;
 
 namespace eUseControl.BusinessLogic.Core
 {
@@ -17,23 +17,18 @@ namespace eUseControl.BusinessLogic.Core
      {
           internal ULoginResp UserLoginLogic(ULoginData data)
           {
-               UDBTable result;
+               UDBTable user;
                using (var context = new EfitContext())
                {
-                    result = context.User.FirstOrDefault(u => u.Name == data.Credential && u.Password == data.Password);
-                    if (result == null)
+                    user = context.Users.FirstOrDefault(u => u.Name == data.Username && u.Password == data.Password);
+                    if (user == null)
                     {
                          return new ULoginResp { Status = false, StatusMsg = "Wrong email or password" };
                     }
                }
-               using (var todo = new EfitContext())
-               {
-                    result.lastLogin = data.LoginDateTime;
-                    todo.Entry(result).State = EntityState.Modified;
-                    todo.SaveChanges();
-               }
+               
 
-               var apiCookie = Cookie(result.Name);
+               var apiCookie = Cookie(user.Name);
 
                HttpContext.Current.Response.Cookies.Add(apiCookie);
 
@@ -52,20 +47,20 @@ namespace eUseControl.BusinessLogic.Core
                     // Initialize the database if it doesn't exist
                     Database.SetInitializer<EfitContext>(new CreateDatabaseIfNotExists<EfitContext>());
 
-                    var session = db.Session.FirstOrDefault(s => s.UserName == loginCredential);
+                    var session = db.Sessions.FirstOrDefault(s => s.Username == loginCredential);
 
                     if (session != null)
                     {
                          session.CookieString = apiCookie.Value;
                          session.ExpireTime = DateTime.Now.AddMinutes(60);
-                         session.UserName = loginCredential; // Store the username in the session
+                         session.Username = loginCredential; // Store the username in the session
                          db.Entry(session).State = EntityState.Modified;
                     }
                     else
                     {
-                         db.Session.Add(new Session
+                         db.Sessions.Add(new Session
                          {
-                              UserName = loginCredential,
+                              Username = loginCredential,
                               CookieString = apiCookie.Value,
                               ExpireTime = DateTime.Now.AddMinutes(60)
                          });
@@ -84,20 +79,20 @@ namespace eUseControl.BusinessLogic.Core
 
                using (var db = new SessionContext())
                {
-                    session = db.Session.FirstOrDefault(s => s.CookieString == cookie && s.ExpireTime > DateTime.Now);
+                    session = db.Sessions.FirstOrDefault(s => s.CookieString == cookie && s.ExpireTime > DateTime.Now);
                }
 
                if (session == null) return null;
                using (var db = new EfitContext())
                {
                     var validate = new EmailAddressAttribute();
-                    if (validate.IsValid(session.UserName))
+                    if (validate.IsValid(session.Username))
                     {
-                         curentUser = db.User.FirstOrDefault(u => u.Email == session.UserName);
+                         curentUser = db.Users.FirstOrDefault(u => u.Email == session.Username);
                     }
                     else
                     {
-                         curentUser = db.User.FirstOrDefault(u => u.Name == session.UserName);
+                         curentUser = db.Users.FirstOrDefault(u => u.Name == session.Username);
                     }
                }
 
@@ -108,29 +103,40 @@ namespace eUseControl.BusinessLogic.Core
                return usermini;
           }
 
-          internal URegisterResp UserRegistrationLogic(URegisterData data)
+          internal ULoginResp UserRegistrationLogic(URegisterData data)
           {
-               using (var context = new EfitContext())
-               {
-                    UDBTable result;
-                    result = context.User.FirstOrDefault(u => u.Name == data.Username);
-                    if (result != null)
-                    {
-                         return new URegisterResp { Status = false, StatusMsg = "User with this name already exists" };
-                    }
+               UDBTable user;
 
-                    var newUser = new UDBTable
-                    {
-                         Name = data.Username,
-                         Password = data.Password,
-                         Email = data.Email,
-                         level = URoles.User,
-                         lastLogin = data.RegisterDateTime
-                    };
-                    context.User.Add(newUser);
-                    context.SaveChanges();
-                    return new URegisterResp { Status = true };
+               using (var db = new EfitContext())
+               {
+                    user = db.Users.FirstOrDefault(u => u.Email == data.Email);
                }
+
+               // If the user already exists, return an appropriate response
+               if (user != null)
+               {
+                    return new ULoginResp { Status = false, StatusMsg = "User already exists" };
+               }
+
+               // Create a new user
+               user = new UDBTable
+               {
+                    Name = data.Username,
+                    Password = data.Password,
+                    Email = data.Email,
+                    level = URoles.User
+               };
+
+               // Save the new user to the database
+               using (var db = new EfitContext())
+               {
+                    Database.SetInitializer<EfitContext>(new CreateDatabaseIfNotExists<EfitContext>());
+                    db.Users.Add(user);
+                    db.SaveChanges();
+               }
+
+               // Succes
+               return new ULoginResp { Status = true, StatusMsg = "Utilizatorul a fost înregistrat cu succes." };
           }
-     }
+          }
 }

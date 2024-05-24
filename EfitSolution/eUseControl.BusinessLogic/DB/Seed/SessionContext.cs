@@ -10,9 +10,9 @@ namespace eUseControl.BusinessLogic.DB
 {
      internal class SessionContext : DbContext
      {
-          public SessionContext() : base("name=EFit") {
+          public SessionContext() : base("EFitDB") {
                Database.SetInitializer(new CreateDatabaseIfNotExists<SessionContext>());
           }
-          public virtual DbSet<Session> Session { get; }
+          public virtual DbSet<Session> Sessions { get; set;}
      }
 }

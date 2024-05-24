@@ -26,13 +26,9 @@ namespace eUseControl.Domain.Entities.User
           public string Password { get; set; }
 
           [Required]
-          [Display(Name ="email Address")]
+          [Display(Name = "email Address")]
           public string Email { get; set; }
 
-          [DataType(DataType.DateTime)]
-          public DateTime lastLogin { get; set; }
-
-          [StringLength(50)]
           public URoles level { get; set; }
      }
 }

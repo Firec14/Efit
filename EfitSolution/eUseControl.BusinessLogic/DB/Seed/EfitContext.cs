@@ -11,11 +11,10 @@ namespace eUseControl.BusinessLogic.DB
 {
      public class EfitContext : DbContext
      {
-          public EfitContext() : base("name=Efit")
+          public EfitContext() : base("EfitDB")
           {
                Database.SetInitializer(new CreateDatabaseIfNotExists<EfitContext>());
           }
-          public virtual DbSet<UDBTable> User { get; set; }
-          public virtual DbSet<UDBTable> Sesion { get; set; }
+          public virtual DbSet<UDBTable> Users { get; set; }
      }
 }

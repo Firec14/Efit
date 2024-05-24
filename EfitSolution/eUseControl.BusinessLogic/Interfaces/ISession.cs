@@ -1,17 +1,19 @@
-﻿using eUseControl.BusinessLogic.Core;
+﻿using Domain.Entities.User;
 using eUseControl.Domain.Entities.User;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
+
 
 namespace eUseControl.BusinessLogic.Interfaces
 {
      public interface ISession
      {
-          ULoginResp UserLogin(ULoginData data);
-          URegisterResp UserRegistration(URegisterData data);
+          ULoginResp UserLogin(ULoginData uLoginData);
+
+          ULoginResp UserRegister(URegisterData URegisterData);
+
+          HttpCookie GenCookie(string loginCredential);
+
+          UserMini GetUserByCookie(string apiCookieValue);
+
      }
 }

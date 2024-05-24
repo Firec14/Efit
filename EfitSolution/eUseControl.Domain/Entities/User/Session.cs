@@ -16,11 +16,11 @@ namespace eUseControl.Domain.Entities.User
 
           [Required]
           [StringLength(30)]
-          public string UserName { get; set; }
+          public string Username { get; set; }
           [Required]
           public string CookieString {  get; set; }
           [Required]
           public DateTime ExpireTime { get; set; }
-          public virtual UDBTable User { get; set; }
+          
      }
 }

@@ -5,8 +5,10 @@ using eUseControl.Domain.Entities.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Authentication;
 using System.Web;
 using System.Web.Mvc;
+using AutoMapper;
 
 namespace EfitWeb1.Controllers
 {
@@ -26,29 +28,38 @@ namespace EfitWeb1.Controllers
           // GET: Login
           [HttpPost]
           [ValidateAntiForgeryToken]
-          public ActionResult Index(UserLogin login)
+          public ActionResult LogInUser(UserLogin login)
           {
                if (ModelState.IsValid)
                {
-                    ULoginData data = new ULoginData
-                    {
-                         Credential = login.Credential,
-                         Password = login.Password,
-                    };
+                    var config = new MapperConfiguration(cfg => cfg.CreateMap<UserLogin, ULoginData>());
+                    var mapper = config.CreateMapper();
+                    var data = mapper.Map<ULoginData>(login);
 
                     var userLogin = _session.UserLogin(data);
+
+                    if (userLogin == null)
+                    {
+                         throw new AuthenticationException("ERROR. No login response!");
+                    }
+
                     if (userLogin.Status)
                     {
-                         //ADD COOKIE
+                         // Generarea cookie pentru sesiunea actuală
+                         HttpCookie cookie = _session.GenCookie(login.Username);
+                         ControllerContext.HttpContext.Response.Cookies.Add(cookie);
+
                          return RedirectToAction("Index", "Home");
                     }
                     else
                     {
+                         // Autentificare nereusita
                          ModelState.AddModelError("", userLogin.StatusMsg);
-                         return View();
+                         return View("Login", login); ;
                     }
                }
-               return View();
+
+               return RedirectToAction("Index", "Home");
           }
      }
 }
