@@ -19,7 +19,10 @@ namespace EfitWeb1.Controllers
                var bl = new BusinessLogic();
                _session = bl.GetSessionBL();
           }
-
+          public ActionResult Login()
+          {
+               return View();
+          }
           // GET: Login
           [HttpPost]
           [ValidateAntiForgeryToken]

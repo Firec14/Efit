@@ -1,7 +1,7 @@
-@model EfitWeb1.Models.UserRegister
+﻿@model EfitWeb1.Models.UserLogin
 
 @{
-     ViewBag.Title = "Register";
+     ViewBag.Title = "Login";
      Layout = "~/Views/Shared/_Layout.cshtml"; // Указываем основной макет
 }
 
@@ -12,26 +12,22 @@
                     <div class="card-header">
                          <ul class="nav nav-tabs card-header-tabs">
                               <li class="nav-item">
-                                   <a class="nav-link" id="login-tab" data-toggle="tab" href="@Url.Action("Index", "Login")" role="tab" aria-controls="login" aria-selected="false">Login</a>
+                                   @Html.ActionLink("Login", "Login", "Login", null, new { @class = "nav-link active" })
                               </li>
                               <li class="nav-item">
-                                   <a class="nav-link active" id="register-tab" data-toggle="tab" href="@Url.Action("Index", "Register")" role="tab" aria-controls="register" aria-selected="true">Register</a>
+                                   @Html.ActionLink("Register", "Register", "Register", null, new { @class = "nav-link" })
                               </li>
+
                          </ul>
                     </div>
                     <div class="card-body">
-                         @using (Html.BeginForm("Index", "Register", FormMethod.Post))
+                         @using (Html.BeginForm("Index", "Login", FormMethod.Post))
                          {
                               @Html.AntiForgeryToken()
                               <div class="form-group">
-                                   @Html.LabelFor(m => m.Username)
-                                   @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
-                                   @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
-                              </div>
-                              <div class="form-group">
-                                   @Html.LabelFor(m => m.Email)
-                                   @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-                                   @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                   @Html.LabelFor(m => m.Credential)
+                                   @Html.TextBoxFor(m => m.Credential, new { @class = "form-control" })
+                                   @Html.ValidationMessageFor(m => m.Credential, "", new { @class = "text-danger" })
                               </div>
                               <div class="form-group">
                                    @Html.LabelFor(m => m.Password)
@@ -39,7 +35,7 @@
                                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
                               </div>
                               <div class="form-group">
-                                   <input type="submit" value="Register" class="btn btn-primary btn-block" />
+                                   <input type="submit" value="Login" class="btn btn-primary btn-block" />
                               </div>
                          }
                          @if (ViewBag.ErrorMessage != null)

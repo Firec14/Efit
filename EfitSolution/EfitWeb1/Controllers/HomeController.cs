@@ -27,20 +27,6 @@ namespace EfitWeb1.Controllers
                return View();
           }
 
-          public ActionResult Login()
-          {
-               ViewBag.Message = "...";
-
-               return View();
-          }
-
-          public ActionResult Register()
-          {
-               ViewBag.Message = "...";
-
-               return View();
-          }
-
           public ActionResult Forgot_Password()
           {
                ViewBag.Message = "...";

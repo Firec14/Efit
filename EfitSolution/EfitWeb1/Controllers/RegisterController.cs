@@ -19,10 +19,11 @@ namespace EfitWeb1.Controllers
                _session = bl.GetSessionBL();
           }
           // GET: Register
-          public ActionResult Index()
+          public ActionResult Register()
           {
                return View();
           }
+
           //POSt
           [HttpPost]
           public ActionResult Index(UserRegister register)
