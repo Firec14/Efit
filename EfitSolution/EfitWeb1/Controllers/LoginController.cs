@@ -9,6 +9,7 @@ using System.Security.Authentication;
 using System.Web;
 using System.Web.Mvc;
 using AutoMapper;
+using Domain.Entities.User;
 
 namespace EfitWeb1.Controllers
 {
@@ -59,7 +60,12 @@ namespace EfitWeb1.Controllers
                     }
                }
 
+
                return RedirectToAction("Index", "Home");
+          }
+          public UserMini GetUserDetails(string authToken)
+          {
+               return _session.GetUserByCookie(authToken);
           }
      }
 }
