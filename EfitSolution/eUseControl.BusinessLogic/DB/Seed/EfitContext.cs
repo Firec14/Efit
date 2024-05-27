@@ -17,6 +17,5 @@ namespace eUseControl.BusinessLogic.DB
                Database.SetInitializer(new CreateDatabaseIfNotExists<EfitContext>());
           }
           public virtual DbSet<UDBTable> Users { get; set; }
-          public virtual DbSet<ProductTable> Products { get; set; }
      }
 }

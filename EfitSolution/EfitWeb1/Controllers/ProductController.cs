@@ -1,4 +1,5 @@
 ﻿using eUseControl.BusinessLogic.DB;
+using eUseControl.BusinessLogic.DB.Seed;
 using eUseControl.Domain.Entities.Product;
 using System;
 using System.Data.Entity;
@@ -13,9 +14,9 @@ namespace EfitWeb1.Controllers
 {
     public class ProductController : Controller
     {
-          private readonly EfitContext _product;
+          private readonly ProductContext _product;
 
-          public ProductController(EfitContext product)
+          public ProductController(ProductContext product)
           {
                _product = product ?? throw new ArgumentNullException(nameof(product));
           }
@@ -33,7 +34,7 @@ namespace EfitWeb1.Controllers
 
           [HttpPost]
           [ValidateAntiForgeryToken]
-          public async Task<ActionResult> Create(ProductTable product)
+          public async Task<ActionResult> Create(ProductData product)
           {
                if (ModelState.IsValid)
                {
@@ -66,7 +67,7 @@ namespace EfitWeb1.Controllers
 
           [HttpPost]
           [ValidateAntiForgeryToken]
-          public async Task<ActionResult> Edit(int id, ProductTable product)
+          public async Task<ActionResult> Edit(int id, ProductData product)
           {
                if (id != product.ProductId)
                {

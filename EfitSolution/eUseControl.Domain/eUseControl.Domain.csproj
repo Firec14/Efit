@@ -52,7 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Entities\Product\ProductData.cs" />
+    <Compile Include="Entities\Product\ProductResponse.cs" />
     <Compile Include="Entities\Product\ProductTable.cs" />
+    <Compile Include="Entities\Responce\ServiceResponce.cs" />
     <Compile Include="Entities\User\Session.cs" />
     <Compile Include="Entities\User\UDBTable.cs" />
     <Compile Include="Entities\User\ULoginData.cs" />
