@@ -1,4 +1,5 @@
-﻿using eUseControl.Domain.Entities.User;
+﻿using eUseControl.Domain.Entities.Product;
+using eUseControl.Domain.Entities.User;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -16,5 +17,6 @@ namespace eUseControl.BusinessLogic.DB
                Database.SetInitializer(new CreateDatabaseIfNotExists<EfitContext>());
           }
           public virtual DbSet<UDBTable> Users { get; set; }
+          public virtual DbSet<ProductTable> Products { get; set; }
      }
 }

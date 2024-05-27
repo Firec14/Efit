@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Entities\Product\ProductTable.cs" />
     <Compile Include="Entities\User\Session.cs" />
     <Compile Include="Entities\User\UDBTable.cs" />
     <Compile Include="Entities\User\ULoginData.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="Entities\User\URegisterData.cs" />
     <Compile Include="Entities\User\URegisterResp.cs" />
     <Compile Include="Entities\User\UserMini.cs" />
+    <Compile Include="Enums\ProductRoles.cs" />
     <Compile Include="Enums\URoles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
