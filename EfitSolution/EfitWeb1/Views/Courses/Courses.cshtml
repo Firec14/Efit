@@ -1,0 +1,128 @@
+﻿@{
+     ViewBag.Title = "Courses";
+     Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+     <meta name="description" content="" />
+     <meta name="author" content="" />
+     <title>Efit - Enjoy the movements</title>
+     <!-- Favicon-->
+     <link rel="icon" type="image/x-icon" href="~/Content/assets/icon.ico" />
+     <!-- Font Awesome icons (free version)-->
+     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+     <!-- Google fonts-->
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+     <!-- Core theme CSS (includes Bootstrap)-->
+     <link href="~/Content/css/styles.css" rel="stylesheet" />
+     <style>
+          .courses-section {
+               padding: 60px 0;
+          }
+
+          .course-card {
+               background-color: #ffffff;
+               border-radius: 10px;
+               box-shadow: 0 0 15px rgba(0,0,0,0.2);
+               margin: 20px;
+               text-align: center;
+               padding: 20px;
+               transition: transform 0.2s;
+          }
+
+               .course-card:hover {
+                    transform: scale(1.05);
+               }
+
+               .course-card img {
+                    border-radius: 10px;
+                    width: 100%;
+                    height: auto;
+               }
+
+               .course-card h4 {
+                    margin-top: 15px;
+                    font-size: 1.5rem;
+               }
+
+               .course-card p {
+                    font-size: 1rem;
+                    color: #6c757d;
+               }
+
+               .course-card .btn {
+                    margin-top: 10px;
+               }
+     </style>
+</head>
+<body id="page-top">
+     <!-- Navigation-->
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+          <div class="container">
+               <a class="navbar-brand" href="#page-top"><img src="~/Content/assets/img/logo1.svg" alt="..." /></a>
+          </div>
+     </nav>
+
+     <!-- Courses Section -->
+     <section class="courses-section" id="courses">
+          <div class="container">
+               <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Courses</h2>
+               </div>
+               <div class="row">
+                    <div class="col-md-4">
+                         <div class="course-card">
+                              <img src="~/Content/assets/img/courses/amateur.jpg" alt="Amateur Course">
+                              <h4>Amateur</h4>
+                              <p>Description of the Amateur course.</p>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="/courses/amateur">Explore</a>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="course-card">
+                              <img src="~/Content/assets/img/courses/beginner.jpg" alt="Beginner Course">
+                              <h4>Beginner</h4>
+                              <p>Description of the Beginner course.</p>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="/courses/beginner">Explore</a>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="course-card">
+                              <img src="~/Content/assets/img/courses/intermediate.jpg" alt="Intermediate Course">
+                              <h4>Intermediate</h4>
+                              <p>Description of the Intermediate course.</p>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="/courses/intermediate">Explore</a>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="course-card">
+                              <img src="~/Content/assets/img/courses/advanced.jpg" alt="Advanced Course">
+                              <h4>Advanced</h4>
+                              <p>Description of the Advanced course.</p>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="/courses/advanced">Explore</a>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="course-card">
+                              <img src="~/Content/assets/img/courses/pro.jpg" alt="Pro Course">
+                              <h4>Pro</h4>
+                              <p>Description of the Pro course.</p>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="/courses/pro">Explore</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- Bootstrap core JS-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Core theme JS-->
+     <script src="~/Content/js/scripts.js"></script>
+</body>
+</html>
