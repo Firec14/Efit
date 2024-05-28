@@ -142,6 +142,7 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\TrainerController.cs" />
     <Compile Include="Controllers\UserPageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -212,6 +213,7 @@
     <Content Include="Views\Courses\Courses.cshtml" />
     <Content Include="Views\Trainer\TrainerPage.cshtml" />
     <Content Include="Views\Product\ProductPage.cshtml" />
+    <Content Include="Views\Services\Services.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

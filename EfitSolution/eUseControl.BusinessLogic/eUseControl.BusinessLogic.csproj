@@ -76,6 +76,7 @@
     <Compile Include="BusinessLogic.cs" />
     <Compile Include="Core\AdminApi.cs" />
     <Compile Include="Core\ProductApi.cs" />
+    <Compile Include="Core\TrainerApi.cs" />
     <Compile Include="Core\UserApi.cs" />
     <Compile Include="DB\Seed\EfitContext.cs" />
     <Compile Include="DB\Seed\ProductContext.cs" />

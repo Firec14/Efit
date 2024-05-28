@@ -8,12 +8,12 @@ using System.Web.Mvc;
 namespace EfitWeb1.Controllers
 {
      [UserMod]
-    public class UserPageController : Controller
-    {
-        // GET: UserPage
-        public ActionResult UserPage()
-        {
-            return View();
-        }
-    }
+     public class ServicesController : Controller
+     {
+          // GET: Services
+          public ActionResult Services()
+          {
+               return View();
+          }
+     }
 }

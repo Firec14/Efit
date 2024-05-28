@@ -12,8 +12,8 @@ using System.Web.Mvc;
 
 namespace EfitWeb1.Controllers
 {
-    public class ProductController : Controller
-    {
+     public class ProductController : Controller
+     {
           private readonly ProductContext _product;
 
           public ProductController(ProductContext product)
@@ -34,7 +34,7 @@ namespace EfitWeb1.Controllers
 
           [HttpPost]
           [ValidateAntiForgeryToken]
-          public async Task<ActionResult> Create(ProductData product)
+          public async Task<ActionResult> Create(ProductTable product)
           {
                if (ModelState.IsValid)
                {
@@ -67,7 +67,7 @@ namespace EfitWeb1.Controllers
 
           [HttpPost]
           [ValidateAntiForgeryToken]
-          public async Task<ActionResult> Edit(int id, ProductData product)
+          public async Task<ActionResult> Edit(int id, ProductTable product)
           {
                if (id != product.ProductId)
                {
