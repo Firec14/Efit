@@ -34,12 +34,12 @@
                          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                          @if (User.Identity.IsAuthenticated)
                          {
-                              <li class="nav-item">@Html.ActionLink("Logout", "Logout", "Account", new { area = "" }, new { @class = "nav-link" })</li>
+                              <li class="nav-item">@Html.ActionLink("Logout", "Logout", "UserPage", new { area = "" }, new { @class = "nav-link" })</li>
                          }
                          else
                          {
-                              <li class="nav-item">@Html.ActionLink("Login", "Login", "Account", new { area = "" }, new { @class = "nav-link" })</li>
-                              <li class="nav-item">@Html.ActionLink("Register", "Register", "Account", new { area = "" }, new { @class = "nav-link" })</li>
+                              <li class="nav-item">@Html.ActionLink("Login", "Login", "UserPage", new { area = "" }, new { @class = "nav-link" })</li>
+                              <li class="nav-item">@Html.ActionLink("Register", "Register", "UserPage", new { area = "" }, new { @class = "nav-link" })</li>
                          }
                     </ul>
                </div>

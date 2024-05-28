@@ -2,17 +2,16 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace eUseControl.Domain.Entities.Product
+namespace EfitWeb1.Models
 {
-     public class ProductData
+     public class ProductDataModel
      {
           public int ProductId { get; set; }
           public string Name { get; set; }
           public string Description { get; set; }
-          public string ProductCategory { get; set;}
+          public string ProductCategory { get; set; }
           public decimal ProductPrice { get; set; }
           public ProductRoles Level { get; set; }
      }

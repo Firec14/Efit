@@ -1,0 +1,49 @@
+﻿@model eUseControl.Domain.Entities.Product.ProductTable
+
+@{
+     ViewBag.Title = "EditProduct";
+}
+
+<h1>Edit Product</h1>
+@Html.AntiForgeryToken()
+<hr />
+<div class="row">
+     <div class="col-md-4">
+          <form asp-action="Edit">
+               @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+               <input type="hidden" asp-for="ProductId" />
+               <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+               </div>
+               <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+               </div>
+               <div class="form-group">
+                    <label asp-for="ProductCategory" class="control-label"></label>
+                    <input asp-for="ProductCategory" class="form-control" />
+                    <span asp-validation-for="ProductCategory" class="text-danger"></span>
+               </div>
+               <div class="form-group">
+                    <label asp-for="ProductPrice" class="control-label"></label>
+                    <input asp-for="ProductPrice" class="form-control" />
+                    <span asp-validation-for="ProductPrice" class="text-danger"></span>
+               </div>
+               <div class="form-group">
+                    <label asp-for="Level" class="control-label"></label>
+                    <select asp-for="Level" class="form-control" asp-items="Html.GetEnumSelectList<ProductRoles>()"></select>
+                    <span asp-validation-for="Level" class="text-danger"></span>
+               </div>
+               <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+               </div>
+          </form>
+     </div>
+</div>
+
+<div>
+     <a asp-action="TrainerPage">Back to List</a>
+</div>

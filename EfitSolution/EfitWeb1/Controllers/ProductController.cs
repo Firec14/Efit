@@ -89,7 +89,6 @@ namespace EfitWeb1.Controllers
                          existingProduct.Name = product.Name;
                          existingProduct.Description = product.Description;
                          existingProduct.ProductCategory = product.ProductCategory;
-                         existingProduct.ProductDescription = product.ProductDescription;
                          existingProduct.ProductPrice = product.ProductPrice;
 
                          // Mark the product as modified

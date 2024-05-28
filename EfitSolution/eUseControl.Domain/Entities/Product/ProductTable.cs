@@ -21,11 +21,8 @@ namespace eUseControl.Domain.Entities.Product
           [Display (Name = "Description")]
           public string Description { get; set; }
           [Required]
-          [Display (Name = "ProductCategory")]
+          [Display(Name = "ProductCategory")]
           public string ProductCategory { get; set; }
-          [Required]
-          [Display(Name = "ProductDescription")]
-          public string ProductDescription { get; set; }
           [Required]
           [Display(Name = "ProductPrice")]
           public decimal ProductPrice { get; set; }

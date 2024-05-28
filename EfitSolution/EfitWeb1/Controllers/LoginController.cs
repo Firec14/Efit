@@ -67,5 +67,7 @@ namespace EfitWeb1.Controllers
           {
                return _session.GetUserByCookie(authToken);
           }
+
+
      }
 }

@@ -1,7 +1,39 @@
-﻿
+﻿@model IEnumerable<eUseControl.Domain.Entities.Product.ProductTable>
+
 @{
-    ViewBag.Title = "TrainerPage";
+     ViewBag.Title = "TrainerPage";
 }
 
-<h2>TrainerPage</h2>
+<h1>TrainerPage</h1>
+<h2>Product List</h2>
+<p>
+     @Html.ActionLink("Create New", "CreateProduct", "Trainer", null, new { @class = "nav-link" })
+</p>
 
+<table class="table">
+     <thead>
+          <tr>
+               <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+               <th>@Html.DisplayNameFor(model => model.First().ProductCategory)</th>
+               <th>@Html.DisplayNameFor(model => model.First().ProductPrice)</th>
+               <th>@Html.DisplayNameFor(model => model.First().Level)</th>
+               <th></th>
+          </tr>
+     </thead>
+     <tbody>
+          @foreach (var item in Model)
+          {
+               <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ProductCategory)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ProductPrice)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Level)</td>
+                    <td>
+                         @Html.ActionLink("Edit", "EditProduct", "Trainer", new { id = item.ProductId }, null) |
+                         @Html.ActionLink("Delete", "DeleteProduct", "Trainer", new { id = item.ProductId }, null)
+                    </td>
+               </tr>
+          }
+
+     </tbody>
+</table>
