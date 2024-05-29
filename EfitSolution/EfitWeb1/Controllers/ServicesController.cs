@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace EfitWeb1.Controllers
 {
-    
+     [UserMod]
     public class ServicesController : Controller
     {
         private readonly ProductContext _product;

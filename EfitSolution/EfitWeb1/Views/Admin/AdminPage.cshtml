@@ -1,7 +1,58 @@
-﻿
-@{
-    ViewBag.Title = "AdminPage";
-}
+﻿@model EfitWeb1.Models.AdminModel
 
-<h2>AdminPage</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+     <title>Admin Page</title>
+     <link rel="stylesheet" href="~/Content/bootstrap.css" />
+</head>
+<body>
+     <div class="container">
+          <h1>Admin Page</h1>
+          <h2>Registered Users</h2>
+          <table class="table">
+               <thead>
+                    <tr>
+                         <th>UserId</th>
+                         <th>Username</th>
+                         <th>Email</th>
+                         <th>Role</th>
+                    </tr>
+               </thead>
+               <tbody>
+                    @foreach (var user in Model.Users)
+                    {
+                         <tr>
+                              <td>@user.UserId</td>
+                              <td>@user.Name</td>
+                              <td>@user.Email</td>
+                              <td>@user.level</td>
+                         </tr>
+                    }
+               </tbody>
+          </table>
 
+          <h2>Courses</h2>
+          <table class="table">
+               <thead>
+                    <tr>
+                         <th>CourseId</th>
+                         <th>CourseName</th>
+                         <th>Description</th>
+                    </tr>
+               </thead>
+               <tbody>
+                    @foreach (var course in Model.Products)
+                    {
+                         <tr>
+                              <td>@course.ProductId</td>
+                              <td>@course.Name</td>
+                              <td>@course.Description</td>
+                         </tr>
+                    }
+               </tbody>
+          </table>
+     </div>
+</body>
+</html>
