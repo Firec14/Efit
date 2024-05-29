@@ -1,13 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Threading.Tasks;
 using System.Web.Mvc;
+using EfitWeb1.Models;
+using eUseControl.BusinessLogic.DB.Seed;
+using eUseControl.Domain.Entities.Contact;
 
 namespace EfitWeb1.Controllers
 {
      public class HomeController : Controller
      {
+          private readonly ContactContext _contactContext;
+
+          public HomeController()
+          {
+               _contactContext = new ContactContext();
+          }
+
           public ActionResult Index()
           {
                return View();
@@ -16,22 +23,23 @@ namespace EfitWeb1.Controllers
           public ActionResult About()
           {
                ViewBag.Message = "Your application description page.";
-
                return View();
           }
 
-          public ActionResult Contact()
+          [HttpPost]
+          [ValidateAntiForgeryToken]
+          public async Task<ActionResult> Submit(ContactTable contact)
           {
-               ViewBag.Message = "Your contact page.";
+               if (ModelState.IsValid)
+               {
+                    _contactContext.Contacts.Add(contact);
+                    await _contactContext.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Form submission successful!";
+                    return RedirectToAction("Index");
+               }
 
-               return View();
-          }
-
-          public ActionResult Forgot_Password()
-          {
-               ViewBag.Message = "...";
-
-               return View();
+               TempData["ErrorMessage"] = "Error sending message! Please try again.";
+               return RedirectToAction("Index");
           }
      }
 }

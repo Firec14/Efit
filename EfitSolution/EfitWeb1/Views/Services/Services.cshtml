@@ -1,7 +1,33 @@
-﻿
+﻿@model IEnumerable<eUseControl.Domain.Entities.Product.ProductTable>
+
 @{
-    ViewBag.Title = "Services";
+     ViewBag.Title = "Services";
 }
 
-<h2>Services</h2>
+<h1>Services</h1>
+<h2>Product List</h2>
 
+
+<table class="table">
+     <thead>
+          <tr>
+               <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+               <th>@Html.DisplayNameFor(model => model.First().ProductCategory)</th>
+               <th>@Html.DisplayNameFor(model => model.First().ProductPrice)</th>
+               <th>@Html.DisplayNameFor(model => model.First().Level)</th>
+               <th></th>
+          </tr>
+     </thead>
+     <tbody>
+          @foreach (var item in Model)
+          {
+               <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ProductCategory)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ProductPrice)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Level)</td>
+               </tr>
+          }
+
+     </tbody>
+</table>

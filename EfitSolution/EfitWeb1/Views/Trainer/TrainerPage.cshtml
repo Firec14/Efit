@@ -22,7 +22,7 @@
      </thead>
      <tbody>
           @foreach (var item in Model)
-          {
+           {
                <tr>
                     <td>@Html.DisplayFor(modelItem => item.Name)</td>
                     <td>@Html.DisplayFor(modelItem => item.ProductCategory)</td>
@@ -33,7 +33,7 @@
                          @Html.ActionLink("Delete", "DeleteProduct", "Trainer", new { id = item.ProductId }, null)
                     </td>
                </tr>
-          }
+           }
 
      </tbody>
 </table>

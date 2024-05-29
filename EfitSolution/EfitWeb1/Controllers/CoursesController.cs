@@ -12,6 +12,10 @@ namespace EfitWeb1.Controllers
           {
                return View();
           }
+          public ActionResult NOT()
+          {
+               return View();
+          }
      }
 
 }

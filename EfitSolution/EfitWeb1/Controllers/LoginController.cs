@@ -67,6 +67,26 @@ namespace EfitWeb1.Controllers
           {
                return _session.GetUserByCookie(authToken);
           }
+          public ActionResult Logout()
+          {
+               var authToken = Request.Cookies["X-KEY"]?.Value;
+               if (authToken == null || GetUserDetails(authToken) == null)
+               {
+                    TempData["ErrorMessage"] = "[!] Nu sunteți logat pentru a vă dezloga.";
+                    return RedirectToAction("Index", "Home");
+               }
+
+               if (Request.Cookies["X-KEY"] != null)
+               {
+                    var c = new HttpCookie("X-KEY");
+                    c.Expires = DateTime.Now.AddDays(-1);
+                    Response.Cookies.Add(c);
+               }
+
+               Session.Abandon();
+
+               return RedirectToAction("Login", "Login");
+          }
 
 
      }

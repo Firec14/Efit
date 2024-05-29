@@ -99,3 +99,4 @@ C:\Users\Serghei\Desktop\222222\Efit\EfitSolution\eUseControl.BusinessLogic\obj\
 C:\Users\Serghei\Desktop\222222\Efit\EfitSolution\eUseControl.BusinessLogic\obj\Debug\eUseControl.BusinessLogic.pdb
 C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.BusinessLogic\obj\Debug\eUseControl.BusinessLogic.Migrations.RemoveProductDescription.resources
 C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.BusinessLogic\obj\Debug\eUseControl.BusinessLogic.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\MRSUTWeb\Efit\EfitSolution\eUseControl.BusinessLogic\obj\Debug\eUseControl.BusinessLogic.Migrations.InitialCreate.resources

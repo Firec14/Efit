@@ -1,15 +1,12 @@
 ﻿using EfitWeb1.Attributes;
-using eUseControl.BusinessLogic.DB;
 using eUseControl.BusinessLogic.DB.Seed;
-using eUseControl.BusinessLogic.Interfaces;
 using eUseControl.Domain.Entities.Product;
 using System;
-using System.Collections.Generic;
-using System.Data.Entity.Infrastructure;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
 using System.Web.Mvc;
 
 namespace EfitWeb1.Controllers
@@ -22,12 +19,6 @@ namespace EfitWeb1.Controllers
           public TrainerController()
           {
                _product = new ProductContext();
-          }
-
-          public ActionResult TrainerPage()
-          {
-               var products = _product.Products.ToList();
-               return View(products);
           }
 
           public ActionResult CreateProduct()
@@ -48,6 +39,8 @@ namespace EfitWeb1.Controllers
                }
                return View(product);
           }
+
+          // GET: Trainer/EditProduct/{id}
           public async Task<ActionResult> EditProduct(int? id)
           {
                if (id == null)
@@ -58,30 +51,15 @@ namespace EfitWeb1.Controllers
                var product = await _product.Products.FindAsync(id);
                if (product == null)
                {
+                    Debug.WriteLine($"Product with id = {id} not found.");
                     return HttpNotFound();
                }
+
+               Debug.WriteLine($"Product with id = {id} found.");
                return View(product);
           }
 
-          private bool ProductExists(int id)
-          {
-               return _product.Products.Any(p => p.ProductId == id);
-          }
-
-          [HttpPost]
-          [ValidateAntiForgeryToken]
-          public async Task<ActionResult> UpdateProduct(ProductTable product)
-          {
-               if (ModelState.IsValid)
-               {
-                    _product.Entry(product).State = EntityState.Modified;
-                    await _product.SaveChangesAsync();
-                    return RedirectToAction(nameof(TrainerPage));
-               }
-               return View(product);
-          }
-
-
+          // POST: Trainer/EditProduct/{id}
           [HttpPost]
           [ValidateAntiForgeryToken]
           public async Task<ActionResult> EditProduct(int id, ProductTable product)
@@ -95,59 +73,55 @@ namespace EfitWeb1.Controllers
                {
                     try
                     {
-                         // Retrieve the existing product from the database
                          var existingProduct = await _product.Products.FindAsync(id);
                          if (existingProduct == null)
                          {
+                              Debug.WriteLine($"Existing product with id = {id} not found.");
                               return HttpNotFound();
                          }
+                         UpdateProduct(existingProduct, product);
 
-                         // Update the properties of the existing product
-                         existingProduct.Name = product.Name;
-                         existingProduct.Description = product.Description;
-                         existingProduct.ProductCategory = product.ProductCategory;
-                         existingProduct.ProductPrice = product.ProductPrice;
-
-                         // Mark the product as modified
                          _product.Entry(existingProduct).State = EntityState.Modified;
-
-                         // Save the changes to the database
                          await _product.SaveChangesAsync();
+                         Debug.WriteLine($"Product with id = {id} updated.");
                     }
-                    catch (DbUpdateConcurrencyException ex)
+                    catch (DbUpdateConcurrencyException)
                     {
-                         // Reload the product from the database
-                         var reloadedProduct = await _product.Products.FindAsync(id);
-
-                         // Merge the changes
-                         if (reloadedProduct != null)
+                         if (!ProductExists(product.ProductId))
                          {
-                              reloadedProduct.Name = product.Name;
-                              reloadedProduct.Description = product.Description;
-                              reloadedProduct.ProductCategory = product.ProductCategory;
-                              reloadedProduct.ProductPrice = product.ProductPrice;
-
-                              // Mark the product as modified
-                              _product.Entry(reloadedProduct).State = EntityState.Modified;
-
-                              // Save the changes to the database
-                              await _product.SaveChangesAsync();
+                              Debug.WriteLine($"Product with id = {product.ProductId} not found.");
+                              return HttpNotFound();
                          }
                          else
                          {
-                              if (!ProductExists(product.ProductId))
-                              {
-                                   return HttpNotFound();
-                              }
-                              else
-                              {
-                                   throw;
-                              }
+                              throw;
                          }
                     }
-                    return RedirectToAction(nameof(TrainerPage), new { id = product.ProductId });
+
+                    return RedirectToAction(nameof(TrainerPage));
                }
+
                return View(product);
+          }
+
+          private void UpdateProduct(ProductTable existingProduct, ProductTable updatedProduct)
+          {
+               existingProduct.Name = updatedProduct.Name;
+               existingProduct.Description = updatedProduct.Description;
+               existingProduct.ProductCategory = updatedProduct.ProductCategory;
+               existingProduct.ProductPrice = updatedProduct.ProductPrice;
+               existingProduct.Level = updatedProduct.Level;
+          }
+
+          private bool ProductExists(int id)
+          {
+               return _product.Products.Any(e => e.ProductId == id);
+          }
+
+          public ActionResult TrainerPage()
+          {
+               var products = _product.Products.ToList();
+               return View(products);
           }
 
           public async Task<ActionResult> DeleteProduct(int? id)
@@ -157,8 +131,7 @@ namespace EfitWeb1.Controllers
                     return HttpNotFound();
                }
 
-               var product = await _product.Products
-                  .FirstOrDefaultAsync(m => m.ProductId == id);
+               var product = await _product.Products.FirstOrDefaultAsync(m => m.ProductId == id);
                if (product == null)
                {
                     return HttpNotFound("Product not found");
@@ -169,18 +142,20 @@ namespace EfitWeb1.Controllers
 
           [HttpPost, ActionName("DeleteProduct")]
           [ValidateAntiForgeryToken]
-          public async Task<ActionResult> DeleteProduct(int id)
+          public async Task<ActionResult> DeleteProductConfirmed(int id)
           {
                try
                {
                     var product = await _product.Products.FindAsync(id);
-                    _product.Products.Remove(product);
-                    await _product.SaveChangesAsync();
+                    if (product != null)
+                    {
+                         _product.Products.Remove(product);
+                         await _product.SaveChangesAsync();
+                    }
                }
                catch (Exception ex)
                {
-                    // Log the exception
-                    Console.WriteLine(ex.Message);
+                    Debug.WriteLine(ex.Message);
                     return HttpNotFound("Failed to delete product");
                }
 

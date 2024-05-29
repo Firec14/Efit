@@ -65,7 +65,7 @@
      <!-- Navigation-->
      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
           <div class="container">
-               <a class="navbar-brand" href="#page-top"><img src="~/Content/assets/img/logo1.svg" alt="..." /></a>
+               <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="~/Content/assets/img/logo1.svg" alt="..." /></a>
           </div>
      </nav>
 
@@ -73,47 +73,42 @@
      <section class="courses-section" id="courses">
           <div class="container">
                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Courses</h2>
+                    <h2 class="section-heading text-uppercase">Preinstalled Courses</h2>
                </div>
                <div class="row">
                     <div class="col-md-4">
                          <div class="course-card">
-                              <img src="~/Content/assets/img/courses/amateur.jpg" alt="Amateur Course">
                               <h4>Amateur</h4>
                               <p>Description of the Amateur course.</p>
-                              <a class="btn btn-primary btn-xl text-uppercase" href="/courses/amateur">Explore</a>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("NOT", "Courses")">Explore</a>
                          </div>
                     </div>
                     <div class="col-md-4">
                          <div class="course-card">
-                              <img src="~/Content/assets/img/courses/beginner.jpg" alt="Beginner Course">
                               <h4>Beginner</h4>
                               <p>Description of the Beginner course.</p>
-                              <a class="btn btn-primary btn-xl text-uppercase" href="/courses/beginner">Explore</a>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("NOT", "Courses")">Explore</a>
                          </div>
                     </div>
                     <div class="col-md-4">
                          <div class="course-card">
-                              <img src="~/Content/assets/img/courses/intermediate.jpg" alt="Intermediate Course">
                               <h4>Intermediate</h4>
                               <p>Description of the Intermediate course.</p>
-                              <a class="btn btn-primary btn-xl text-uppercase" href="/courses/intermediate">Explore</a>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("NOT", "Courses")">Explore</a>
                          </div>
                     </div>
                     <div class="col-md-4">
                          <div class="course-card">
-                              <img src="~/Content/assets/img/courses/advanced.jpg" alt="Advanced Course">
                               <h4>Advanced</h4>
                               <p>Description of the Advanced course.</p>
-                              <a class="btn btn-primary btn-xl text-uppercase" href="/courses/advanced">Explore</a>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("NOT", "Courses")">Explore</a>
                          </div>
                     </div>
                     <div class="col-md-4">
                          <div class="course-card">
-                              <img src="~/Content/assets/img/courses/pro.jpg" alt="Pro Course">
                               <h4>Pro</h4>
                               <p>Description of the Pro course.</p>
-                              <a class="btn btn-primary btn-xl text-uppercase" href="/courses/pro">Explore</a>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("NOT", "Courses")">Explore</a>
                          </div>
                     </div>
                </div>

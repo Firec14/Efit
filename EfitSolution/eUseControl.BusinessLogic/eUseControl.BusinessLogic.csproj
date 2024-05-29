@@ -78,6 +78,7 @@
     <Compile Include="Core\ProductApi.cs" />
     <Compile Include="Core\TrainerApi.cs" />
     <Compile Include="Core\UserApi.cs" />
+    <Compile Include="DB\Seed\ContactContext.cs" />
     <Compile Include="DB\Seed\EfitContext.cs" />
     <Compile Include="DB\Seed\ProductContext.cs" />
     <Compile Include="DB\Seed\SessionContext.cs" />
@@ -87,6 +88,10 @@
     <Compile Include="Migrations\202405281947435_RemoveProductDescription.cs" />
     <Compile Include="Migrations\202405281947435_RemoveProductDescription.Designer.cs">
       <DependentUpon>202405281947435_RemoveProductDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405292023020_InitialCreate.cs" />
+    <Compile Include="Migrations\202405292023020_InitialCreate.Designer.cs">
+      <DependentUpon>202405292023020_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,6 +115,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202405281947435_RemoveProductDescription.resx">
       <DependentUpon>202405281947435_RemoveProductDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405292023020_InitialCreate.resx">
+      <DependentUpon>202405292023020_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

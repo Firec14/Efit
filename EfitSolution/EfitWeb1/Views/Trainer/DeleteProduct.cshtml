@@ -44,6 +44,6 @@
 
           <input type="hidden" asp-for="ProductId" />
           <input type="submit" value="Delete" class="btn btn-danger" />
-          <a asp-action="TrainerPage" class="btn btn-secondary">Cancel</a>
+          <a href="@Url.Action("TrainerPage", "Trainer")">Cancel</a>
      </div>
 }
