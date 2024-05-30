@@ -5,14 +5,14 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<eUseControl.BusinessLogic.DB.Seed.ProductContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<eUseControl.BusinessLogic.DB.Seed.ContactContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(eUseControl.BusinessLogic.DB.Seed.ProductContext context)
+        protected override void Seed(eUseControl.BusinessLogic.DB.Seed.ContactContext context)
         {
             //  This method will be called after migrating to the latest version.
 

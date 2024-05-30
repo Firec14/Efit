@@ -1,0 +1,19 @@
+﻿
+@{
+     ViewBag.Title = "Download";
+     Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+     <title>Download PDF</title>
+     <link rel="stylesheet" href="~/Content/bootstrap.css" />
+</head>
+<body>
+     <div class="container">
+          <h1>Download PDF</h1>
+          <a href="@Url.Action("DownloadPdf", "Files")" class="btn btn-primary">Download PDF</a>
+     </div>
+</body>
+</html>

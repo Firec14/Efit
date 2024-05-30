@@ -16,6 +16,7 @@ namespace EfitWeb1.Controllers
      {
           private readonly ProductContext _product;
 
+          
           public TrainerController()
           {
                _product = new ProductContext();

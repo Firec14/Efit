@@ -1,0 +1,30 @@
+﻿@model eUseControl.Domain.Entities.Product.ProductTable
+
+@{
+     ViewBag.Title = "ConfirmationPage";
+}
+
+<h2>Confirm Purchase</h2>
+
+<p>You are about to purchase the following product:</p>
+
+
+@using (Html.BeginForm("ConfirmationPage", "Services"))
+{
+     @Html.Hidden("productId", Model.ProductId)
+     <input type="submit" value="Confirm Purchase" class="btn btn-primary" />
+     <a href="@Url.Action("Services", "Services")" class="btn btn-default">Cancel</a>
+<div>
+          <dl>
+               <dt>Name:</dt>
+               <dd>@Model.Name</dd>
+               <dt>Category:</dt>
+               <dd>@Model.ProductCategory</dd>
+               <dt>Price:</dt>
+               <dd>@Model.ProductPrice</dd>
+               <dt>Level:</dt>
+               <dd>@Model.Level</dd>
+          </dl>
+     </div>
+
+}

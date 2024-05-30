@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Diagnostics;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using EfitWeb1.Models;
 using eUseControl.BusinessLogic.DB.Seed;
@@ -30,16 +32,35 @@ namespace EfitWeb1.Controllers
           [ValidateAntiForgeryToken]
           public async Task<ActionResult> Submit(ContactTable contact)
           {
-               if (ModelState.IsValid)
+               if (!ModelState.IsValid)
+               {
+                    // Log ModelState errors
+                    foreach (var state in ModelState)
+                    {
+                         foreach (var error in state.Value.Errors)
+                         {
+                              Debug.WriteLine($"Error in {state.Key}: {error.ErrorMessage}");
+                         }
+                    }
+
+                    // Return the view with the current user object to display validation messages
+                    return View("Index", contact);
+               }
+
+               try
                {
                     _contactContext.Contacts.Add(contact);
                     await _contactContext.SaveChangesAsync();
                     TempData["SuccessMessage"] = "Form submission successful!";
                     return RedirectToAction("Index");
                }
-
-               TempData["ErrorMessage"] = "Error sending message! Please try again.";
-               return RedirectToAction("Index");
+               catch (Exception ex)
+               {
+                    // Log the exception
+                    Debug.WriteLine($"Exception: {ex.Message}");
+                    TempData["ErrorMessage"] = "Error sending message! Please try again.";
+                    return RedirectToAction("Index");
+               }
           }
      }
 }

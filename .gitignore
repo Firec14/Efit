@@ -1,3 +1,4 @@
 .vs/
 /EfitSolution/EfitWeb1/Views/Home/Index.cshtml
 /EfitSolution/EfitWeb1/Views/Trainer/EditProduct.cshtml
+/EfitSolution/EfitWeb1/Views/Services/Services.cshtml

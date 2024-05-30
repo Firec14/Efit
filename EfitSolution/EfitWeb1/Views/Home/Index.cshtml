@@ -185,7 +185,9 @@
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                </div>
-               <form id="contactForm" action="@Url.Action("Index", "Home")" method="post">
+               <form id="contactForm" action="@Url.Action("Submit", "Home")" method="post">
+                    @Html.AntiForgeryToken() <!-- Add the anti-forgery token here -->
+
                     <div class="row align-items-stretch mb-5">
                          <div class="col-md-6">
                               <div class="form-group">
@@ -220,6 +222,7 @@
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
                </form>
+
           </div>
      </section>
      <!-- Footer-->

@@ -13,7 +13,7 @@ namespace EfitWeb1.Attributes
           {
                var authCookie = filterContext.HttpContext.Request.Cookies["X-KEY"];
 
-               if (authCookie == null)
+               /*if (authCookie == null)
                {
                     filterContext.Result = new RedirectToRouteResult(
                         new RouteValueDictionary
@@ -23,7 +23,7 @@ namespace EfitWeb1.Attributes
                         { "errorMessage", "Please login first." }
                         });
                     return;
-               }
+               }*/
 
                base.OnActionExecuting(filterContext);
           }

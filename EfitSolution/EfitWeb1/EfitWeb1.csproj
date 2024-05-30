@@ -138,6 +138,7 @@
     <Compile Include="Attributes\UserModAttribute.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\FilesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -225,6 +226,8 @@
     <Content Include="Views\Admin\DeleteProductAdmin.cshtml" />
     <Content Include="Views\Admin\EditLevelAdmin.cshtml" />
     <Content Include="Views\Admin\DeleteUser.cshtml" />
+    <Content Include="Views\Files\Download.cshtml" />
+    <Content Include="Views\Services\ConfirmationPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
