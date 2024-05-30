@@ -58,6 +58,7 @@
 
                .course-card .btn {
                     margin-top: 10px;
+                    background-color: #28a745;
                }
      </style>
 </head>
@@ -73,40 +74,36 @@
      <section class="courses-section" id="courses">
           <div class="container">
                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Preinstalled Courses</h2>
+                    <h2 class="section-heading text-uppercase">Beginner Courses</h2>
                </div>
                <div class="row">
                     <div class="col-md-4">
                          <div class="course-card">
-                              <h4>Beginner</h4>
-                              <p>Description of the Beginner course.</p>
-                              <a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("BeginnerCo", "Courses")">Explore</a>
+                              <h4>Strength training </h4>
+                              <p>Description of the course.</p>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("Download", "Files", new { fileName = "curs.pdf" })">Download</a>
                          </div>
                     </div>
                     <div class="col-md-4">
                          <div class="course-card">
-                              <h4>Intermediate</h4>
-                              <p>Description of the Intermediate course.</p>
-                              <a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("NOT", "Courses")">Explore</a>
+                              <h4>Endurance training</h4>
+                              <p>Description of the course.</p>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("Download", "Files", new { fileName = "curs.pdf" })">Download</a>
                          </div>
                     </div>
                     <div class="col-md-4">
                          <div class="course-card">
-                              <h4>Advanced</h4>
-                              <p>Description of the Advanced course.</p>
-                              <a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("NOT", "Courses")">Explore</a>
-                         </div>
-                    </div>
-                    <div class="col-md-4">
-                         <div class="course-card">
-                              <h4>Pro</h4>
-                              <p>Description of the Pro course.</p>
-                              <a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("NOT", "Courses")">Explore</a>
+                              <h4>Hypertrophy</h4>
+                              <p>Description of the course.</p>
+                              <a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("Download", "Files", new { fileName = "curs.pdf" })">Download</a>
                          </div>
                     </div>
                </div>
           </div>
-
+          <div>
+               <a href="@Url.Action("Courses", "Courses")">Back to List</a>
+          </div>
+          <div style="height: 210px;"></div>
      </section>
 
      <!-- Bootstrap core JS-->

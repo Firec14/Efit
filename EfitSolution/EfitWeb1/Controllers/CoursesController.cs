@@ -16,6 +16,10 @@ namespace EfitWeb1.Controllers
           {
                return View();
           }
+          public ActionResult BeginnerCo()
+          {
+               return View();
+          }
      }
 
 }
