@@ -59,6 +59,7 @@ namespace EfitWeb1.Controllers
                return View(product);
           }
 
+          
           // POST: Trainer/EditProduct/{id}
           [HttpPost]
           [ValidateAntiForgeryToken]
@@ -110,6 +111,7 @@ namespace EfitWeb1.Controllers
                existingProduct.Description = updatedProduct.Description;
                existingProduct.ProductCategory = updatedProduct.ProductCategory;
                existingProduct.ProductPrice = updatedProduct.ProductPrice;
+
                existingProduct.Level = updatedProduct.Level;
           }
 

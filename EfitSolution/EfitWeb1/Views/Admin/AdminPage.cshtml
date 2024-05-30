@@ -17,6 +17,7 @@
                          <th>UserId</th>
                          <th>Username</th>
                          <th>Email</th>
+                         <th>Password</th>
                          <th>Role</th>
                     </tr>
                </thead>
@@ -27,7 +28,12 @@
                               <td>@user.UserId</td>
                               <td>@user.Name</td>
                               <td>@user.Email</td>
+                              <td>@user.Password</td>
                               <td>@user.level</td>
+                              <td>
+                                   @Html.ActionLink("Edit", "EditLevelAdmin", "Admin", new { id = user.UserId }, null) |
+                                   @Html.ActionLink("Delete", "DeleteUser", "Admin", new { id = user.UserId }, null)
+                              </td>
                          </tr>
                     }
                </tbody>
@@ -40,6 +46,8 @@
                          <th>CourseId</th>
                          <th>CourseName</th>
                          <th>Description</th>
+                         <th>Product Price</th>
+                         <th>Level</th>
                     </tr>
                </thead>
                <tbody>
@@ -49,6 +57,12 @@
                               <td>@course.ProductId</td>
                               <td>@course.Name</td>
                               <td>@course.Description</td>
+                              <td>@course.ProductPrice</td>
+                              <td>@course.Level</td>
+                              <td>
+                                   @Html.ActionLink("Edit", "EditProductAdmin", "Admin", new { id = course.ProductId }, null) |
+                                   @Html.ActionLink("Delete", "DeleteProductAdmin", "Admin", new { id = course.ProductId }, null)
+                              </td>
                          </tr>
                     }
                </tbody>

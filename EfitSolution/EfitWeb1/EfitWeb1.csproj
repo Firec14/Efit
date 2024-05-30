@@ -221,6 +221,10 @@
     <Content Include="Views\Trainer\EditProduct.cshtml" />
     <Content Include="Views\Trainer\DeleteProduct.cshtml" />
     <Content Include="Views\Courses\NOT.cshtml" />
+    <Content Include="Views\Admin\EditProductAdmin.cshtml" />
+    <Content Include="Views\Admin\DeleteProductAdmin.cshtml" />
+    <Content Include="Views\Admin\EditLevelAdmin.cshtml" />
+    <Content Include="Views\Admin\DeleteUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
