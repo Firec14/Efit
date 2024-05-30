@@ -54,11 +54,13 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                          <li class="nav-item"><a class="nav-link" href="#services">Trainer Services</a></li>
                          <li class="nav-item"><a class="nav-link" href="#courses">Preinstalled Courses</a></li>
+                         <li class="nav-item">@Html.ActionLink("TrainerPage", "TrainerPage", "Trainer", new { area = "" }, new { @class = "nav-link" })</li>
                          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                          <li class="nav-item">@Html.ActionLink("Login", "Login", "Login", new { area = "" }, new { @class = "nav-link" })</li>
                          <li class="nav-item">@Html.ActionLink("Register", "Register", "Register", new { area = "" }, new { @class = "nav-link" })</li>
+                         
                     </ul>
                </div>
           </div>

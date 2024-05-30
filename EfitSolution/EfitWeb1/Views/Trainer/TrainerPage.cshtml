@@ -4,8 +4,22 @@
      ViewBag.Title = "TrainerPage";
 }
 
-<h1>TrainerPage</h1>
-<h2>Product List</h2>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+     <div class="container">
+          <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="~/Content/assets/img/logo1.svg" alt="..." /></a>
+     </div>
+</nav>
+<div class="container">
+     <div class="text-center">
+          <h1 class="section-heading text-uppercase">Trainer Page</h1>
+     </div>
+</div>
+<div class="container">
+     <div class="text-center">
+          <h2 class="section-heading text-uppercase">Product List</h2>
+     </div>
+</div>
 <p>
      @Html.ActionLink("Create New", "CreateProduct", "Trainer", null, new { @class = "nav-link" })
 </p>
@@ -22,7 +36,7 @@
      </thead>
      <tbody>
           @foreach (var item in Model)
-           {
+          {
                <tr>
                     <td>@Html.DisplayFor(modelItem => item.Name)</td>
                     <td>@Html.DisplayFor(modelItem => item.ProductCategory)</td>
@@ -33,7 +47,7 @@
                          @Html.ActionLink("Delete", "DeleteProduct", "Trainer", new { id = item.ProductId }, null)
                     </td>
                </tr>
-           }
+          }
 
      </tbody>
 </table>

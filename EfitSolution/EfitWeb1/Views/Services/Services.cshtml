@@ -3,30 +3,42 @@
 @{
      ViewBag.Title = "Services";
 }
-
-<h1>Services</h1>
-<h2>Product List</h2>
-
-<table class="table">
-     <thead>
-          <tr>
-               <th>@Html.DisplayNameFor(model => model.First().Name)</th>
-               <th>@Html.DisplayNameFor(model => model.First().ProductCategory)</th>
-               <th>@Html.DisplayNameFor(model => model.First().ProductPrice)</th>
-               <th>@Html.DisplayNameFor(model => model.First().Level)</th>
-               <th></th>
-          </tr>
-     </thead>
-     <tbody>
-          @foreach (var item in Model)
-           {
-               <tr>
-                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                    <td>@Html.DisplayFor(modelItem => item.ProductCategory)</td>
-                    <td>@Html.DisplayFor(modelItem => item.ProductPrice)</td>
-                    <td>@Html.DisplayFor(modelItem => item.Level)</td>
-                    <td><a class="btn btn-primary btn-xl text-uppercase" href="@Url.Action("Download", "Files", new { fileName = "curs.pdf" })">Download</a></td>
-               </tr>
-           }
-     </tbody>
-</table>
+     <!-- Navigation-->
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+          <div class="container">
+               <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="~/Content/assets/img/logo1.svg" alt="..." /></a>
+          </div>
+     </nav>
+     <div class="container">
+          <div class="text-center">
+               <h1 class="section-heading text-uppercase">Services</h1>
+          </div>
+     </div>
+     <div class="container">
+          <div class="text-center">
+               <h2 class="section-heading text-uppercase">Product List</h2>
+          </div>
+     </div>
+          <table class="table">
+               <thead>
+                    <tr>
+                         <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+                         <th>@Html.DisplayNameFor(model => model.First().ProductCategory)</th>
+                         <th>@Html.DisplayNameFor(model => model.First().Description)</th>
+                         <th>@Html.DisplayNameFor(model => model.First().Level)</th>
+                         <th></th>
+                    </tr>
+               </thead>
+               <tbody>
+                    @foreach (var item in Model)
+                    {
+                         <tr>
+                              <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                              <td>@Html.DisplayFor(modelItem => item.ProductCategory)</td>
+                              <td>@Html.DisplayFor(model => item.Description)</td>
+                              <td>@Html.DisplayFor(modelItem => item.Level)</td>
+                              <td><a class="btn btn-primary btn-sm text-uppercase" href="@Url.Action("Download", "Files", new { fileName = "curs.pdf" })">Download</a></td>
+                         </tr>
+                    }
+               </tbody>
+          </table>
